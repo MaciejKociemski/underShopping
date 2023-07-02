@@ -10,7 +10,7 @@ const products = [
   },
 ];
 
-const App = () => {
+export const App = () => {
   return (
     <Container>
       <h1 className="my-4">Simple Store</h1>

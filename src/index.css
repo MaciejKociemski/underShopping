@@ -13,3 +13,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card {
+  height: 100%;
+}
+
+.card-text {
+  height: 60px;
+  overflow: hidden;
+}
