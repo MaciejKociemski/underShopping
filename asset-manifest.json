@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/underShopping/static/css/main.4752a5b0.css",
+    "main.js": "/underShopping/static/js/main.bd54b7b6.js",
+    "index.html": "/underShopping/index.html",
+    "main.4752a5b0.css.map": "/underShopping/static/css/main.4752a5b0.css.map",
+    "main.bd54b7b6.js.map": "/underShopping/static/js/main.bd54b7b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4752a5b0.css",
+    "static/js/main.bd54b7b6.js"
+  ]
+}
