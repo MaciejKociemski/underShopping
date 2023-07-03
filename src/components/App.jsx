@@ -4,7 +4,7 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { selectProducts } from '../store/productSlice';
 import { addToCart } from '../store/cartSlice';
 import { selectCart } from '../store/cartSlice';
-
+import css from '../components/App.module.css';
 
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
@@ -15,12 +15,16 @@ const ProductCard = ({ product }) => {
 
   return (
     <Col md={4} className="mb-4">
-      <Card>
+      <Card className={css.card}>
         <Card.Body>
           <Card.Title>{product.name}</Card.Title>
           <Card.Text>{product.description}</Card.Text>
           <Card.Text>Price: ${product.price.toFixed(2)}</Card.Text>
-          <Button variant="primary" onClick={handleAddToCart} className="custom-button">
+          <Button
+            variant="primary"
+            onClick={handleAddToCart}
+            className="custom-button"
+          >
             Add to Cart
           </Button>
         </Card.Body>
@@ -31,7 +35,7 @@ const ProductCard = ({ product }) => {
 
 const Cart = () => {
   const cartItems = useSelector(selectCart);
-
+console.log(cartItems)
   return (
     <div>
       <h2 className="my-4">Cart</h2>
@@ -40,7 +44,7 @@ const Cart = () => {
       ) : (
         <ul>
           {cartItems.map(item => (
-            <li key={item.id}>{item.name}</li>
+            <li key={item.cartItemId}>{item.name}</li>
           ))}
         </ul>
       )}
@@ -48,7 +52,7 @@ const Cart = () => {
   );
 };
 
-export const App = () => {
+const App = () => {
   const products = useSelector(selectProducts);
 
   return (
