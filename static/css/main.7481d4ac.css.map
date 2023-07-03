@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.7481d4ac.css","mappings":"AAAA,iBACE,wBAA+B,CAC/B,sBAAuB,CAEvB,WAAY,CADZ,YAAa,CAEb,iBAEF","sources":["components/App.module.css"],"sourcesContent":[".card {\n  background-color:blanchedalmond;\n  border: 1px dashed gray;\n  padding: 20px;\n  margin: 10px;\n  text-align: center;\n  \n}\n\n"],"names":[],"sourceRoot":""}

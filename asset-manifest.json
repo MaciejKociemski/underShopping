@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/underShopping/static/js/main.6e740667.js",
+    "main.css": "/underShopping/static/css/main.7481d4ac.css",
+    "main.js": "/underShopping/static/js/main.90580930.js",
     "index.html": "/underShopping/index.html",
-    "main.6e740667.js.map": "/underShopping/static/js/main.6e740667.js.map"
+    "main.7481d4ac.css.map": "/underShopping/static/css/main.7481d4ac.css.map",
+    "main.90580930.js.map": "/underShopping/static/js/main.90580930.js.map"
   },
   "entrypoints": [
-    "static/js/main.6e740667.js"
+    "static/css/main.7481d4ac.css",
+    "static/js/main.90580930.js"
   ]
 }
