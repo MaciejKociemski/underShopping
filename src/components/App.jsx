@@ -5,6 +5,7 @@ import { selectProducts } from '../store/productSlice';
 import { addToCart } from '../store/cartSlice';
 import { selectCart } from '../store/cartSlice';
 
+
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
 
@@ -19,7 +20,7 @@ const ProductCard = ({ product }) => {
           <Card.Title>{product.name}</Card.Title>
           <Card.Text>{product.description}</Card.Text>
           <Card.Text>Price: ${product.price.toFixed(2)}</Card.Text>
-          <Button variant="primary" onClick={handleAddToCart}>
+          <Button variant="primary" onClick={handleAddToCart} className="custom-button">
             Add to Cart
           </Button>
         </Card.Body>
