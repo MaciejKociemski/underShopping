@@ -17,7 +17,7 @@ const ProductCard = ({ product }) => {
     <Col md={4} className="mb-4">
       <Card className={css.card}>
         <Card.Body>
-          <Card.Title>{product.name}</Card.Title>
+          <Card.Title className={css.card}>{product.name}</Card.Title>
           <Card.Text>{product.description}</Card.Text>
           <Card.Text>Price: ${product.price.toFixed(2)}</Card.Text>
           <Button
